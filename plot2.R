@@ -25,10 +25,10 @@ plot2 <- function() {
     png(filename="plot2.png",width=480,height=480)
     
     plot(data$DateTime, data$Global_active_power,
-         type="n",
+         type="l",
          main=NULL,
          xlab="",
          ylab="Global Active Power (kilowatts)")
-    lines(data$DateTime, data$Global_active_power)
+    
     dev.off()
 }
